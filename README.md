@@ -5,7 +5,7 @@ This plugin logs all incoming requests made to P2P and API plugins.
 ⚠️ This plugin logs a lot of messages ⚠️
 
 Due to logging a lot of things we suggest you modify the settings for the winston logger otherwise
-you might not have logs that will be few days old/
+you might not have logs that will be few days old.
 
 ## Installation
 
