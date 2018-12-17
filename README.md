@@ -38,21 +38,26 @@ module.exports = {
 
 ### Configuration
 
-If you'd like to exclude certain IPs from the logging:
-
 ```js
 module.exports = {
   '@arkecosystem/core-event-emitter': {},
   '@arkecosystem/core-config': {},
   ...
   '@deadlock/detective': {
-    excludeIPs: ['127.0.0.1']
+    api: false, // include api request logs (default: true)
+    excludeIPs: ['127.0.0.1'], // exclude requests from these IPs (default: [])
+    headers: false, // log the headers (default: true)
+    p2p: false, // include p2p request logs (default: true)
+    payload: false, // log the POST/PUT/PATCH payloads (default: true)
+    requestID: true, // show the requestID (default: false)
   },
 }
+```
 
 ## Credits
 
 - [roks0n](https://github.com/roks0n)
+- [dmvt](https://github.com/dmvt)
 - [All Contributors](../../../../contributors)
 
 ## License
