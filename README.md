@@ -38,7 +38,17 @@ module.exports = {
 
 ### Configuration
 
-No configuration is needed.
+If you'd like to exclude certain IPs from the logging:
+
+```js
+module.exports = {
+  '@arkecosystem/core-event-emitter': {},
+  '@arkecosystem/core-config': {},
+  ...
+  '@deadlock/detective': {
+    excludeIPs: ['127.0.0.1']
+  },
+}
 
 ## Credits
 
