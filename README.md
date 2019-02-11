@@ -5,7 +5,7 @@ This plugin logs all incoming requests made to P2P and API plugins.
 ⚠️ This plugin logs a lot of messages ⚠️
 
 Due to logging a lot of things we suggest you modify the settings for the winston logger otherwise
-you might not have logs that will be few days old/
+you might not have logs that will be few days old.
 
 ## Installation
 
@@ -38,11 +38,26 @@ module.exports = {
 
 ### Configuration
 
-No configuration is needed.
+```js
+module.exports = {
+  '@arkecosystem/core-event-emitter': {},
+  '@arkecosystem/core-config': {},
+  ...
+  '@deadlock/detective': {
+    api: false, // include api request logs (default: true)
+    excludeIPs: ['127.0.0.1'], // exclude requests from these IPs (default: [])
+    headers: false, // log the headers (default: true)
+    p2p: false, // include p2p request logs (default: true)
+    payload: false, // log the POST/PUT/PATCH payloads (default: true)
+    requestID: true, // show the requestID (default: false)
+  },
+}
+```
 
 ## Credits
 
 - [roks0n](https://github.com/roks0n)
+- [dmvt](https://github.com/dmvt)
 - [All Contributors](../../../../contributors)
 
 ## License
