@@ -11,6 +11,11 @@ you might not have logs that will be few days old.
 
 ### Clone
 
+For production:
+
+`yarn add global @deadlock-delegate/detective`
+
+For development:
 ```bash
 cd ~/ark-core/plugins
 git clone https://github.com/deadlock-delegate/detective
@@ -44,6 +49,7 @@ module.exports = {
   '@arkecosystem/core-config': {},
   ...
   '@deadlock/detective': {
+    enabled: true, // disable/enable the plugin (default: true)
     api: false, // include api request logs (default: true)
     excludeIPs: ['127.0.0.1'], // exclude requests from these IPs (default: [])
     headers: false, // log the headers (default: true)
