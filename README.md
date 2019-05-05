@@ -9,13 +9,11 @@ you might not have logs that will be few days old.
 
 ## Installation
 
-### Clone
-
-For production:
+#### For production:
 
 `yarn add global @deadlock-delegate/detective`
 
-For development:
+#### For development:
 ```bash
 cd ~/ark-core/plugins
 git clone https://github.com/deadlock-delegate/detective
@@ -24,7 +22,7 @@ lerna bootstrap
 
 ### Registration
 
-Open `~/.ark/config/plugins.js` and add the following at the end (it has to be bellow p2p and api).
+Open `~/.config/ark-core/{mainnet|devnet|testnet}/plugins.js` and add the following at the end (it has to be bellow p2p and api).
 
 ```js
 '@deadlock/detective': {}
