@@ -1,6 +1,6 @@
 {
   "name": "@deadlock-delegate/detective",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Ark plugin that logs incoming requests to p2p and api endpoints",
   "author": "roks0n",
   "license": "MIT",
