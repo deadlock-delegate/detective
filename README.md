@@ -11,7 +11,7 @@ you might not have logs that will be few days old.
 
 #### For production:
 
-`yarn add global @deadlock-delegate/detective`
+`yarn global add @deadlock-delegate/detective`
 
 #### For development:
 ```bash
