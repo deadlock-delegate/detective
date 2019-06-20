@@ -25,7 +25,7 @@ lerna bootstrap
 Open `~/.config/ark-core/{mainnet|devnet|testnet}/plugins.js` and add the following at the end (it has to be bellow p2p and api).
 
 ```js
-'@deadlock/detective': {}
+'@deadlock-delegate/detective': {}
 ```
 
 like so:
@@ -35,7 +35,7 @@ module.exports = {
   '@arkecosystem/core-event-emitter': {},
   '@arkecosystem/core-config': {},
   ...
-  '@deadlock/detective': {},  // this is the newly added line
+  '@deadlock-delegate/detective': {},  // this is the newly added line
 }
 ```
 
@@ -46,7 +46,7 @@ module.exports = {
   '@arkecosystem/core-event-emitter': {},
   '@arkecosystem/core-config': {},
   ...
-  '@deadlock/detective': {
+  '@deadlock-delegate/detective': {
     enabled: true, // disable/enable the plugin (default: true)
     api: false, // include api request logs (default: true)
     excludeIPs: ['127.0.0.1'], // exclude requests from these IPs (default: [])
